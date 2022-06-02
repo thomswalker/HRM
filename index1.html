@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee details</title>
+    <link rel="stylesheet" href="css/dash.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+   </head>
+<body>
+    <header>
+         <div class="main_box">
+            <input type="checkbox" id="check">
+            <div class="btn_one">
+              <label for="check">
+                <i class="fas fa-bars"></i>
+              </label>
+            </div>
+            <div class="sidebar_menu">
+              <div class="logo">
+                <a href="#">Employee name</a>
+                  </div>
+                <div class="btn_two">
+                  <label for="check">
+                    <i class="fas fa-times"></i>
+                  </label>
+                </div>
+              <div class="menu">
+                <ul>
+                  <li><a href="http://127.0.0.1:5500/index1.html#">Dashboard</a><i class="fa-solid fa-chevron-right"></i></li>
+                  <li><a href="http://127.0.0.1:5500/index5.html">Payslips</a><i class="fa-solid fa-chevron-right"></i></li>
+                  <li><a href="http://127.0.0.1:5500/index6.html">Mark attendence</a><i class="fa-solid fa-chevron-right"></i></li>
+                  <li> <a href="http://127.0.0.1:5500/index7.html">Doubt section</a><i class="fa-solid fa-chevron-right"></i></li>
+                  <li><a href="http://127.0.0.1:5500/index.html">Logout</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+         <div id="logo">
+            <a href="">Dashboard</a>
+        </div>
+        <nav id="social-links">
+            <ul><a href="http://127.0.0.1:5500/index2.html">
+           <i class="fa-regular fa-message"></i></a>
+           </ul>
+        </nav>
+    </header>
+     <div class="heading">
+       <h1>Employee details</h1></div>
+<div class="box"><div class="child"></div></div>
+       <div class="img-user"><img src="/img/user.png2.png" alt="">
+     </div>
+     <div class="box-1">
+      <p class="p3">Name: <span>Abc Xyz</span></p>
+      <p class="p3">Employee ID: <span>1234546789</span></p>
+      <p class="p3">Role: <span>Sr.Web Developer</span></p>
+      <p class="p3">Email: <span>abc@gmail.com</span></p>
+      <p class="p3">Office address: <span>101, 5th floor, Business complex, MG Street, opp. Reliance mall, Gandhinagar, Gujarat</span></p>
+  </div>
+      <button type="button" class="button">
+        <span class="button__text">My Task</span>
+        <span class="button__icon"> <a href="http://127.0.0.1:5500/index3.html">
+        <i class="fa fa-angle-right"></i></span></a>
+    </button>
+    <div>
+      <button type="button-2" class="button-2">
+        <span class="button__text-2">Apply for Leaves</span>
+        <span class="button__icon"><a href="http://127.0.0.1:5500/index4.html">
+          <i class="fa fa-angle-right"></i></span></a>
+    </button>
+    </div>
+    </div>
+  </div>
+</body>
+</html>
+
+<style>
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+  
+header{
+    background:#0099ff;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 10px 10px;
+}
+
+header a{
+color: #fff;
+text-decoration: none;
+
+}
+.main_box{
+  position: relative;
+  height: 50px;
+  width: 100px;
+}
+.main_box .sidebar_menu{
+  position: fixed;
+  height: 352px;
+  width: 280px;
+  left: -280px;
+  top: 0px;
+  background:#ffff ;
+  box-shadow: 6px 0px 100px rgba(56, 55, 55, 0.5);
+  overflow: hidden;
+  transition: all 0.3s linear;
+}
+
+.sidebar_menu .logo{
+  position: absolute;
+  width: 100%;
+  height: 70px;
+  background: #0099ff;
+  box-shadow: 0 0 6px rgba(255, 255, 255, 0.5);
+ }
+.sidebar_menu .logo a{
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  position: absolute;
+  left: 50px;
+  line-height: 75px;
+  text-decoration: none;
+}
+.sidebar_menu .menu{
+  position: absolute;
+  top: 80px;
+  width:100%;
+}
+.sidebar_menu .menu li{
+  margin-top: 1px;
+  padding: 14px 8px;
+}
+
+.sidebar_menu .menu a{
+  color: #696969;
+  font-size: 15px;
+  text-decoration: none;
+}
+.sidebar_menu .menu li:hover{
+  border-left: 1px solid #000;
+  box-shadow: 0 0 4px rgba(8, 8, 8, 0.5);
+  
+}
+
+.fa-chevron-right{
+  size-adjust: 2px;
+  color: #000;
+  float:right;
+  cursor: pointer;
+  
+}
+#check{
+  display: none;
+}
+.main_box .btn_one i{
+  color: #fff;
+  font-size: 30px;
+  font-weight: 700;
+  position: absolute;
+  left: 16px;
+  line-height: 60px;
+  cursor: pointer;
+  opacity: 1;
+  transition: all 0.3s linear;  
+}
+ .sidebar_menu .btn_two i{
+  font-size: 25px;
+  line-height: 75px;
+  position: absolute;
+  left: 25px;
+  cursor: pointer;
+  opacity: 0;
+  transition: all 0.3s linear;
+}
+
+.btn_two i{
+  color: #fff;
+  
+}
+.btn_one i:hover{
+  font-size: 29px;
+}
+.btn_two i:hover{
+  font-size: 24px;
+}
+#check:checked ~ .sidebar_menu{
+  left: 0;
+}
+#check:checked ~ .btn_one i{
+  opacity: 0;
+}
+#check:checked ~ .sidebar_menu .btn_two i{
+  opacity: 1;
+}
+#logo{
+    margin:auto;
+    font-size: 40px;
+    justify-content: center;
+
+
+}
+.fa-regular{
+    font-size: 30px;
+    color: #fff;
+    cursor: pointer;
+} 
+.fa{
+    font-size: 30px;
+    color: #fff;
+    cursor:pointer;
+} 
+.heading{
+  margin:21px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.img-user img{
+  width: 200px;
+  height: auto;
+  display: flex;
+  border-radius: 500%;
+  border: 10px solid #0099ff;
+  margin:-200px auto;
+  
+
+}
+.box{
+  background-color: #0099ff;
+  width: 100%;
+  justify-content: center;
+}
+.child{
+  width: 100vh;
+  height: 200px;
+}
+.box-1{
+    position: relative;
+    padding-left: 25%;
+    margin-top: 210px;
+    margin-bottom: 30px;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+.p3{
+    font-size: 17px;
+    word-spacing: 1px;
+    letter-spacing: 0px;
+    margin-top: 10px;
+
+}
+.p3 span{
+    color:#696969;
+    padding-left: 20px;
+}
+
+.button{
+    position: relative;
+    top: 60%;
+    left: 32%;
+    
+  }
+.button-2{
+    position: relative;
+    margin-top: 10px ;
+    top: 60%;
+    left: 32%;
+    width: 530px;
+       
+ }
+.button,
+.button-2{ display: inline-flex;
+    height: 35px;
+    padding: 0;
+    background: #0099ff;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    overflow: hidden;
+    font-size: 40px;
+    font-weight: 500px;
+    cursor: pointer;
+    text-decoration: none;
+  }
+.button:hover,
+.button-2:hover{
+    background-color:#1e88e5;
+}
+.button:active,
+.button-2:active{
+    background-color:#0099ff ;
+}
+.button__text {
+    display: inline-flex;
+    align-items: center;
+    font-size: 17px;
+    padding: 0 200px;
+    color: #fff;
+    height: 100%; 
+}
+.button__text-2 {
+    display: flex;
+    margin: auto;
+    align-items: center;
+    text-align:center;
+    font-size: 17px;
+    color: #fff;
+    height: 100%; 
+}
+.button__icon{
+    display: inline-flex;
+    align-items: center;
+    padding:0 20px;
+    color: #fff;
+    height: 100%; 
+}
+
+
+</style>

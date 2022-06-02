@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chat</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+<body>
+    <header>
+    <div class="headline">
+        <h1>Chat</h1>
+    </div>
+    <nav id="social-links">
+        <ul><a href="http://127.0.0.1:5500/index1.html#">
+            <i class="fa-solid fa-angle-left"></i></a>
+       </ul>
+    </nav>
+   </header>  
+    <div class="container">
+        <div class="leftside">
+            <div class="header"> 
+                <h1> My chat</h1>
+            </div>
+            
+            <div class="chatlist">
+                <div class="block">
+                    <div class="imgbox">
+                        <img src="/img/download.png" class="cover">
+                    </div>
+                    <div class="details">
+                        <div class="listheader">
+                            <h3>HR</h3>
+                        </div>
+                    </div>
+                </div>
+                  <div class="block-2">
+                        <div class="imgbox-2">
+                            <img src="/img/download.png" class="cover-2">
+                        </div>
+                        <div class="details">
+                            <div class="listheader-2">
+                                <h3>Manager</h3>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+        
+           <div class="RightSide">
+             <div class="header">
+                   <div class="imgtext">
+                   <div class="userimghr">
+                       <img src="/img/download.png" class="cover">
+                   </div>
+                   <h4>HR</h4>
+                </div>
+               </div>
+
+               <div class="chatBox">
+                <div class="message hr_message">
+                    <p>your next project is to designing ui for HRM app</p>
+                </div> 
+                <div class="message my_message">
+                 <p>ok</p>
+             </div> 
+            </div>
+            
+           <div class="chatbox_input">
+            <input type="text" placeholder="write a message">
+            <!-- <i class="fa-solid fa-microphone-lines"></i> -->
+           </div>
+           </div>
+           
+          
+          
+    </div>
+</body>
+</html>
+
+<style>
+   @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+/* body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient( rgb(65, 157, 233) 0%, rgb(65, 157, 233) 130px, lightgrey 130px,lightgrey 100%);
+} */
+header{
+    background:#0099ff;
+    width: 100%;
+    height: 5%;
+    display: flex;
+    align-items: center;
+    padding: 10px 10px;
+}
+.headline{
+    color: #fff;
+    font-size: 30px;
+    display: flex;
+    margin: auto;
+}
+#social-links i{
+  color: #fff;
+  font-size: 35px;
+  left: 2%;
+  line-height: 2px;
+  position: absolute;
+  cursor: pointer;
+  opacity: 1;
+  transition: all 0.3s linear;  
+}
+
+.container{
+    margin: auto;
+    position: relative;
+    width: 1200px;
+    max-width: 100%;
+    height: calc(65vh - 40px);
+    background: #ffff;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.06),0 2px 5px 0 rgba(0, 0, 0, 0.06);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container .leftside{
+    position: relative;
+    flex: 30%;
+    background: #ffff;
+    border-right: 1px solid rgba(0, 0, 0, 0.2);
+}
+.container .RightSide{
+    position: relative;
+    flex:70%;
+    background: #ffff;
+    
+}
+.container .RightSide ::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.header{
+    position: relative;
+    width: 100%;
+    height: 60px;
+    background: #d6d5d5;
+    font-size: 13px;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 110px;
+}
+.RightSide .header{
+    position: relative;
+    width: 100%;
+    height: 60px;
+    background:#afcbff;
+    font-size: 13px;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 110px;
+}
+.chatlist{
+    position: relative;
+    height: calc(100% - 110px);
+    overflow-y: auto;
+}
+
+.chatlist .block, .block-2 {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px ;
+    border-bottom: 1px solid #000;
+    cursor: pointer;
+}
+.chatlist .block .imgbox  {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    right: 115px;
+    border-radius: 50%;  
+}
+.chatlist .block, .block-2:hover{
+    background: #d3d3d3;
+}
+.chatlist .block, .block-2:active{
+    background: #d3d3d3;
+}
+.imgbox-2{
+    position: relative;
+    width: 50px;
+    height: 50px;
+    right: 90px;
+    border-radius: 50%; 
+}
+.cover ,.cover-2{
+    position: absolute;
+    top: 10px;
+    width: 70%;
+    height: 70%;
+    object-fit: cover; 
+}
+.listheader h3{
+    position: relative;
+    right: 105px; 
+}
+.listheader-2 {
+    position: relative;
+    right: 80px;  
+}
+.userimghr{
+    position: relative;
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    border-radius: 60%;
+    right: 200px;
+}
+.imgtext{
+    position:relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.imgtext h4{
+    line-height: 1.2em;
+    margin-right:300px;
+    font-size: 30px;
+}
+
+.chatBox{
+    position: relative;
+    width: 100%;
+    height: calc(100% - 120px);
+    padding: 50px;
+    overflow-y: auto;
+}
+.message{
+    position: relative;
+    display: flex;
+    width: 100%;
+    margin: 5px 0;
+}
+.message p{
+    position: relative;
+    right: 0;
+    text-align: right;
+    max-width: 65%;
+    padding: 12px;
+    background:#afcbff;
+    border-radius: 10px;
+    font-size: 0.9em;
+}
+.my_message{
+    justify-content:flex-end ;
+}
+.hr_message{
+    justify-content:flex-start ;
+}
+.my_message p{
+    background: #ffb6c1;
+    text-align: left;
+}  
+
+.chatbox_input{
+    position: relative;
+    width: 100%;
+    height: 60px;
+    background: lightgray;
+    padding: 15px ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.chatbox_input input{
+    position: relative;
+    width: 90%;
+    margin: 0 20px;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    font-size: 1em;
+}
+</style>
+
